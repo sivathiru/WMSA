@@ -1,0 +1,19 @@
+.header-block{
+    background-color: #9fdd93;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+#dropdownBasic1 img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.d-inline-block div span{
+        width: 100px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+}

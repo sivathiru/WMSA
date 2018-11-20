@@ -1,0 +1,87 @@
+<app-header></app-header>
+
+<!-- <div class="col-md-12">
+    <div class="row">
+        <select class="mt-4 mb-2 offset-md-9 col-md-2">
+            <option [value]="item" *ngFor="let item of selectionType">{{ item }}</option>
+        </select>
+    </div>
+</div> -->
+<ngx-spinner></ngx-spinner>
+<ngb-tabset>
+        <ngb-tab title="Journal">
+          <ng-template ngbTabContent>
+              <div class = "col-md-12">
+                <table class="table table-striped table-sm mt-2" [ngStyle]="{'font-size': '12px', 'padding': '2px'}" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="5">
+                        <thead class="card-text">
+                        <tr>
+                            <th style="width: 10%">
+                                <mfDefaultSorter by="name">Journal</mfDefaultSorter>
+                            </th>
+                            <th style="width: 10%">
+                                <mfDefaultSorter by="email">Artist ID</mfDefaultSorter>
+                            </th>
+                            <th style="width: 12%">
+                                <mfDefaultSorter by="city">Task Name</mfDefaultSorter>
+                            </th>
+                            <th style="width: 12%">
+                                <mfDefaultSorter by="age">Date Assigned</mfDefaultSorter>
+                            </th>
+                            <th style="width: 12%">
+                                <mfDefaultSorter by="city">Due Date</mfDefaultSorter>
+                            </th>
+                            <th style="width: 12%">
+                                <mfDefaultSorter by="city">Date Completed</mfDefaultSorter>
+                            </th>
+                            <th style="width: 12%">
+                                <mfDefaultSorter by="city">Status </mfDefaultSorter>
+                            </th>
+                            
+                            <th style="width: 10%">
+                                <mfDefaultSorter by="city">MS Pages</mfDefaultSorter>
+                            </th>
+                            <th style="width: 10%">
+                                <mfDefaultSorter by="city">Action</mfDefaultSorter>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr *ngFor="let item of mf.data">
+                            <td>{{item.Jcode}}</td>
+                            <td>{{item.ARTID}}</td>
+                            <td>{{item.Workname}}</td>
+                            <td>{{item.Date_Assign | date: 'MMM d, y'}}</td>
+                            <td>{{item.Date_Assign | date: 'MMM d, y'}}</td>
+                            <td>{{item.Date_Complete | date: 'MMM d, y'}}</td>
+                            <td>{{item.ArtStatus}}</td>                            
+                            <td>{{item.MSPages}}</td>
+                            <td><a (click)="singleArticlePages(item)" target="blank"><i class="fas fa-external-link-alt"></i></a></td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td colspan="4">
+                                <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+                            </td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+          </ng-template>
+        </ngb-tab>
+        <ngb-tab title="GDP">
+          <!-- <ng-template ngbTabTitle><b>Fancy</b> title</ng-template> -->
+          <ng-template ngbTabContent>
+            <p></p>
+          </ng-template>
+        </ngb-tab>
+        <!-- <ngb-tab title="Disabled">
+          <ng-template ngbTabContent>
+            <p></p>
+          </ng-template>
+        </ngb-tab> -->
+      </ngb-tabset>
+      <app-article-task  bankName="RBC" account-id="4747" *ngIf="articleTask" ></app-article-task>
+
+
+ 

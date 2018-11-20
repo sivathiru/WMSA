@@ -1,0 +1,127 @@
+.login-header{
+    background-color: #da593b;
+    height: 2.5rem;
+}
+.login-foot{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.login-bc{
+    background-color: #fdede9
+}
+.user-detail-bc{
+    background-color: #f1c9c0;
+    border-right: 2px solid #e49b8a;
+}
+.user-detail-bc p{
+    color: #967770;
+}
+.browser-msg{
+    color: #907d78;
+    font-size: 15px;
+}
+.forgot-pass{
+    color: #da593b;
+}
+.login-btn{
+    background-color: #ec9480;
+    color: #ffffff;
+}
+.bg-fa-fa-at{
+    background-color: #e8dbd8;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 1px solid #cac5c5; 
+}
+.bg-fa-fa-at svg{
+    margin: 10px 11px 0 !important;
+    color: #ada5a5;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+.example-full-width {
+   width: 100%;
+}
+/* .login-bg-img{
+   background: url(../../../assets/images/background.jpg) no-repeat center center fixed;
+   height: 100%;
+   background-size: cover;
+} */
+.login-bg-img{
+    background-image: url(../../../assets/images/background.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    position: absolute;
+    width: 100%;
+    opacity: 0.90;
+ }
+
+.transparent-form-bg{
+    /* box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    background-color: rgba(230, 230, 230, 0.84); */
+    color: #000000 !important;
+}
+.loginlogo{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ffffff;
+    outline: 0;
+    box-shadow: none;
+}
+.error-msg {
+    color: #ffffff;
+    font-size: 14px;
+  }
+.fix-error-icon {
+    top: 27px;
+}
+.transparent-form-bg label{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.forgot-password-link{
+    font-size: 0.8rem;  
+    color: #f92319 !important;
+    text-align: right !important;
+    display: block;
+}
+.modal-title{
+    margin: 0 auto;
+}
+.icon-hope{
+    font-size: 75px;
+    margin: 0 auto;
+    display: table;
+    /* font-weight: 500; */
+    color: #5d5c5c;
+}
+.transparent-form-bg hr{
+    border-top: 1px solid rgba(31, 31, 31, 1);
+}
+.login-input-box{
+    border-radius: 1rem;
+}
+.btn-editor{
+    background-color: #306728;
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 1rem;
+}
+.hurix-logo-right{
+    position: absolute;
+    right: 3%;
+    top: 3%;
+}

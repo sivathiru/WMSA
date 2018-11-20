@@ -1,0 +1,35 @@
+<ngx-spinner></ngx-spinner>
+<div class="col-md-12 login-bg-img">
+        <img class="hurix-logo-right" src="assets/images/Hurix-Logo.png">
+    <div class="col-md-12">
+        <div class="mt-3">
+            <div class="col-md-4 mt-5 offset-2 col-8 col-sm-8 offset-sm-2 offset-md-4">
+                <div class="row">
+                    <div class="col-md-10 offset-1 pt-1 pb-4 mt-1 transparent-form-bg">
+                        <span class="icon-hope"></span>
+                        <h5 class="text-center mt-5" [ngStyle]="{'font-weight': 'bold', 'font-size': '1.7rem'}">Sign In</h5>
+                        <hr>
+                        <form [formGroup] = "profileForm" class="form-horizontal col-md-10 offset-md-1" (ngSubmit)="onSubmit()">
+                            <div class="form-group mb-1">
+                                <label class="control-label required mb-0">
+                                    Username
+                                </label>
+                                <input type="text" class="form-control login-input-box"  formControlName = "userName" required>
+                                <!-- <span *ngIf="userName.invalid">{{getErrorMessage()}}</span> -->
+                            </div>
+                            <div class="form-group mb-4">
+                                <label class="control-label mb-0">
+                                    Password
+                                </label>
+                                <input type="password" class="form-control login-input-box" formControlName = "password" required>
+                                <!-- <span *ngIf="password.invalid">{{getErrorMessage()}}</span> -->
+                            </div>
+                            <button type="submit" class="btn btn-editor tag-center mt-1" [disabled]="!profileForm.valid">Sign In</button>
+                            <a class="tag-center mt-3 forgot-password-link cursor-pointer">Forgot Password?</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

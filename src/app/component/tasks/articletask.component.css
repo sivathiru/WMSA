@@ -1,0 +1,19 @@
+.dowmload-file{
+    width: 126px;   
+    border: none;
+    background-color: transparent;
+}
+#download-ids, #styleref, #reference-ids{
+    color: #ffffff;
+}
+.spec-instr-content{
+    color: #ffffff;
+    background-color: #0e3a1e;
+}
+.control-label.required:after { 
+    color: #d00;
+    content: "*";
+    position: absolute;
+    margin-left: 5px;
+    top: 0px;
+  }
